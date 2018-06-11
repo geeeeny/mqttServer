@@ -13,7 +13,8 @@ public class Subscriber {
 		client.connect();
 		
 		//지정한 토픽으로 구독자 등록
-		client.subscribe("iot_data");
+		client.subscribe("home/in/#");
+		client.subscribe("home/out/#");
 	}
 
 }
